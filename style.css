@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --services-title-color:rgba(34, 34, 34, 1);
+    --contact-background-color:rgba(34, 34, 34, 1);
+    --contact-title-color:rgba(255, 255, 255, 1);
+    --button-text-color:rgba(255, 255, 255, 1);
+    --header-link-color:rgba(254, 209, 54, 1);
+    --header-logo-color:rgba(254, 209, 54, 1);
+    --contact-button-color:rgba(254, 209, 54, 1);
+    --services-desc-text-color:rgba(119, 119, 119, 1);
+    --label-text-color:rgba(187, 187, 187, 1);
+    --input-field-background-color:rgba(204, 204, 204, 1);
+    --main-font:'Montserrat',sans-serif;
+    --desc-font:'Roboto Slab',sans-serif;
+}
