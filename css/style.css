@@ -14,3 +14,22 @@
     --main-font:'Montserrat',sans-serif;
     --desc-font:'Roboto Slab',sans-serif;
 }
+
+.container {
+    width: 942px;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 44px;
+}
+
+.services {
+    padding-top: 109px;
+    padding-bottom: 119px;
+}
+
+.contact {
+    padding-top: 92px;
+    padding-bottom: 115px;
+}
