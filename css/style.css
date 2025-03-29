@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
 :root {
     --services-title-color:rgba(34, 34, 34, 1);
     --contact-background-color:rgba(34, 34, 34, 1);
@@ -10,9 +11,10 @@
     --contact-button-color:rgba(254, 209, 54, 1);
     --services-desc-text-color:rgba(119, 119, 119, 1);
     --label-text-color:rgba(187, 187, 187, 1);
-    --input-field-background-color:rgba(204, 204, 204, 1);
+    --input-field-border-color:rgba(204, 204, 204, 1);
     --main-font:'Montserrat',sans-serif;
     --desc-font:'Roboto Slab',sans-serif;
+    --logo-font:'Bilbo Swash Caps',sans-serif;
 }
 
 .container {
@@ -20,16 +22,146 @@
     margin: 0 auto;
 }
 
+.header-logo {
+    text-decoration: none;
+    color: var(--header-logo-color);
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 1.3px;
+    font-family: var(--logo-font);
+}
+
+.header-link {
+    font-size: 14px;
+    line-height: 41px;
+    color: var(--header-link-color);
+    text-decoration: none;
+    padding: 14px 10px;
+}
+
 header {
     padding-top: 44px;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.header-list {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
 .services {
     padding-top: 109px;
     padding-bottom: 119px;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 40px;
+    color: var(--services-title-color);
+    line-height: 75px;
+    padding-bottom: 87.5px;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+
+.services-icon {
+    height: 39px;
+    width: 39px;
+}
+
+
+
+.services-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 75px;
+    font-family: var(--main-font);
+    color: var(--services-title-color);
+}
+
+.services-desc {
+    font-size: 14px;
+    color: var(--services-desc-text-color);
+    font-family: var(--desc-font);
+    width: 290px;
+}
+
+.services-list {
+    display: flex;
+    gap: 56px;
+    justify-content: center;
 }
 
 .contact {
     padding-top: 92px;
     padding-bottom: 115px;
+    background-color: var(--contact-background-color);
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    color: var(--contact-title-color);
+    padding-bottom: 114px;
+}
+
+.contact-form {
+    display: flex;
+    gap:28px;
+}
+
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 28px;
+}
+
+.contact-input {
+    padding: 12px 310px 21px 20px;
+    background-color:white;
+    border:1px solid var(--input-field-border-color);
+    border-radius:3px;
+    margin-right: 28px;
+    font-size: 14px;
+    color: var(--label-text-color);
+    font-weight: bold;
+    font-family: var(--main-font);
+
+}
+
+
+.contact-textarea {
+    padding: 14px 400px 181px 22px;
+    font-size: 14px;
+    color: var(--label-text-color);
+    font-weight: bold;
+    font-family: var(--main-font);
+    background-color:white;
+    border:1px solid var(--input-field-border-color);
+    border-radius:3px;
+}
+
+
+.contact-button {
+    color: var(--button-text-color);
+    background-color: var(--contact-button-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 22px 32px;
+    border-radius: 3px;
+    text-align: center;
+    border: none;
+    margin-top: 27px;
 }

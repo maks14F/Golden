@@ -9,7 +9,7 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <a href="index.html" class="header-logo">
                 <p class="header-logo">
                     Golden
@@ -91,16 +91,18 @@
                         CONTACT US
                     </h2>
                     <form class="contact-form" action="">
-                        <label for="" class="contact-label">
-                            <input type="text" placeholder="YOUR NAME*" class="contact-input">
-                        </label>
-                        <label for="" class="contact-label">
-                            <input type="email" placeholder="YOUR E-MAIL*" class="contact-input">
-                        </label>
-                        <label for="" class="contact-label">
-                            <input type="text" placeholder="SUBJECT" class="contact-input">
-                        </label>
-                        <textarea name="" id="" placeholder="YOUR MESSAGE*" class="contact-textarea"></textarea>
+                        <div class="contact-box">
+                            <label for="" class="contact-label">
+                                <input type="text" placeholder="YOUR NAME *" class="contact-input">
+                            </label>
+                            <label for="" class="contact-label">
+                                <input type="email" placeholder="YOUR E-MAIL *" class="contact-input">
+                            </label>
+                            <label for="" class="contact-label">
+                                <input type="text" placeholder="SUBJECT" class="contact-input">
+                            </label>
+                        </div>
+                        <textarea name="" id="" placeholder="YOUR MESSAGE *" class="contact-textarea"></textarea>
                     </form>
                     <button class="contact-button" type="submit">
                         SEND MESSAGE
