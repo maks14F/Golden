@@ -17,6 +17,11 @@
     --logo-font:'Bilbo Swash Caps',sans-serif;
 }
 
+body {
+    font-size: 14px;
+    font-family: var(--main-font);
+}
+
 .container {
     width: 942px;
     margin: 0 auto;
@@ -27,12 +32,10 @@
     color: var(--header-logo-color);
     font-size: 36px;
     line-height: 41px;
-    letter-spacing: 1.3px;
     font-family: var(--logo-font);
 }
 
 .header-link {
-    font-size: 14px;
     line-height: 41px;
     color: var(--header-link-color);
     text-decoration: none;
@@ -48,16 +51,10 @@
     justify-content: space-between;
 }
 
-
-
-
 .header-list {
     display: flex;
     gap: 10px;
 }
-
-
-
 
 .services {
     padding-top: 109px;
@@ -70,7 +67,6 @@
     color: var(--services-title-color);
     line-height: 75px;
     padding-bottom: 87.5px;
-    font-family: var(--main-font);
     font-weight: bold;
 }
 
@@ -95,12 +91,10 @@
     font-size: 18px;
     font-weight: bold;
     line-height: 75px;
-    font-family: var(--main-font);
     color: var(--services-title-color);
 }
 
 .services-desc {
-    font-size: 14px;
     color: var(--services-desc-text-color);
     font-family: var(--desc-font);
     width: 290px;
@@ -122,45 +116,51 @@
 .contact-title {
     font-size: 40px;
     font-weight: bold;
-    font-family: var(--main-font);
     color: var(--contact-title-color);
     padding-bottom: 114px;
 }
 
 .contact-form {
     display: flex;
+    flex-direction: column;
     gap:28px;
 }
 
-.contact-box {
+.contact-box{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     row-gap: 28px;
 }
 
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
 .contact-input {
-    padding: 12px 310px 21px 20px;
+    padding: 12px 0px 21px 20px;
     background-color:white;
     border:1px solid var(--input-field-border-color);
     border-radius:3px;
-    margin-right: 28px;
-    font-size: 14px;
     color: var(--label-text-color);
     font-weight: bold;
+    width: 455px ;
     font-family: var(--main-font);
-
 }
 
 
 .contact-textarea {
-    padding: 14px 400px 181px 22px;
-    font-size: 14px;
     color: var(--label-text-color);
     font-weight: bold;
-    font-family: var(--main-font);
     background-color:white;
     border:1px solid var(--input-field-border-color);
     border-radius:3px;
+    width: 458px;
+    height: 212px;
+    padding: 14px 0px 0px 22px;
+    font-family: var(--main-font);
 }
 
 
@@ -169,9 +169,11 @@
     background-color: var(--contact-button-color);
     font-size: 18px;
     font-weight: bold;
-    padding: 22px 32px;
+    padding: 22px 45px;
     border-radius: 3px;
     text-align: center;
     border: none;
     margin-top: 27px;
+    margin: 0 auto;
+    font-family: var(--main-font);
 }
