@@ -96,8 +96,8 @@ body {
 
 .services-desc {
     color: var(--services-desc-text-color);
-    font-family: var(--desc-font);
     width: 290px;
+    font-family: var(--desc-font);
 }
 
 .services-list {
@@ -140,7 +140,9 @@ body {
 }
 
 .contact-input {
-    padding: 12px 0px 21px 20px;
+    padding-top: 12px;
+    padding-bottom: 21px;
+    padding-left: 20px;
     background-color:white;
     border:1px solid var(--input-field-border-color);
     border-radius:3px;
@@ -159,8 +161,9 @@ body {
     border-radius:3px;
     width: 458px;
     height: 212px;
-    padding: 14px 0px 0px 22px;
     font-family: var(--main-font);
+    padding-top: 14px;
+    padding-left: 22px;
 }
 
 
